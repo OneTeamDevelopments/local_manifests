@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="oneteam" fetch="https://github.com/OneTeamDevelopments/" revision="android-9.x" />
+<remote name="arrow-hals" fetch="https://github.com/ArrowOS/" revision="android-9.x" />
+
+<!-- Device -->
+<project path="device/google/shamrock" name="android_device_google_shamrock" remote="oneteam" revision="android-9.x" />
+
+<!-- Kernel -->
+<project path="kernel/google/shamrock" name="android_kernel_google_shamrock" remote="oneteam" revision="LA.BR.1.3.7.c25" />
+
+<!-- Vendor -->
+<project path="vendor/google" name="proprietary_vendor_google" remote="oneteam" revision="android-9.x" />
+
+<!-- Hardwares -->
+<remove-project name="android_hardware_qcom_audio"/>
+<remove-project name="android_hardware_qcom_display"/>
+<remove-project name="android_hardware_qcom_media"/>
+
+<project path="hardware/qcom/audio-caf/msm8952" name="android_hardware_qcom_audio" remote="arrow-hals" revision="arrow-9.x-caf-8952" />
+<project path="hardware/qcom/display-caf/msm8952" name="android_hardware_qcom_display" remote="arrow-hals" revision="arrow-9.x-caf-8952" />
+<project path="hardware/qcom/media-caf/msm8952" name="android_hardware_qcom_media" remote="arrow-hals" revision="arrow-9.x-caf-8952" />
+
+<project path="hardware/qcom/audio-caf-msm8952" name="android_hardware_qcom_audio" remote="arrow-hals" revision="arrow-9.x-caf-8952" />
+<project path="hardware/qcom/display-caf-msm8952" name="android_hardware_qcom_display" remote="arrow-hals" revision="arrow-9.x-caf-8952" />
+<project path="hardware/qcom/media-caf-msm8952" name="android_hardware_qcom_media" remote="arrow-hals" revision="arrow-9.x-caf-8952" />
+
+</manifest>
